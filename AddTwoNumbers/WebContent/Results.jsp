@@ -9,9 +9,12 @@
 </head>
 <body>
 	<c:import url="/common-nav.jsp"></c:import>
-	Result is: ${result } <br/>
-	
+	<div class="container">
+		<p class=" col-md-offset-1  jumbotron">
+		Result is: ${result }
+		</p>
 <%-- 	Context Path is: ${pageContext.request.contextPath} <br/> --%>
 
+	</div>
 </body>
 </html>

@@ -9,11 +9,13 @@
 </head>
 <body>
 	<c:import url="/common-nav.jsp"></c:import>
-	<div class="col-md-8 jumbotron">
-		<p>This site is to show a simple example of a servlet that adds two
-		numbers.</p>
-
-		<a href="/AddTwoNumbers/InputNumbers.jsp">Input Numbers</a>
+	<div class="container">
+		<div class="jumbotron col-md-offset-1">
+			<p>This site is to show a simple example of a servlet that adds two
+			numbers.</p>
+	
+			<a href="/AddTwoNumbers/InputNumbers.jsp">Input Numbers</a>
+		</div>
 	</div>
 </body>
 </html>

@@ -1,5 +1,4 @@
-<%@ taglib prefix="c" 
-           uri="http://java.sun.com/jsp/jstl/core" %>  
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,21 +8,32 @@
 </head>
 <body>
 	<c:import url="/common-nav.jsp"></c:import>
+	
 	<c:if test="${not empty error }">
 		<p>${error }</p>
 	</c:if>
 
-	<form action="AddNumbersServlet" method="post">
-		<input type="hidden" name="action" value="add">
-		
-		<label>Number One:</label>
-		<input type="number" step="any" name="number1" placeholder="Enter a Double" required><br/>
-		
-		<label>Number Two:</label>
-		<input type="number" step="any" name="number2" placeholder="Enter a Double" required><br/>
-		
-		<label>	&nbsp;</label>
-		<input class="col-md-4" type="submit" value="Add" id="submit">
-	</form>
+	
+	<div class="page-header col-md-offset-2">
+  		<h1>Number Adder <small>Fun with Floats</small></h1>
+	</div>
+
+	<div class="form-group">
+		<form class="col-md-8" action="AddNumbersServlet"
+			method="post">
+			<input class="form-control" type="hidden" name="action" value="add"> 
+			
+			<label for="num1">Number One:</label> 
+			<input class="form-control"  id="num1" type="number" step="any" name="number1"
+				placeholder="Enter a Double" required><br /> 
+				
+			<label for="num2">Number Two:</label> 
+			<input class="form-control" id="num2" type="number" step="any" name="number2"
+				placeholder="Enter a Double" required><br /> 
+				
+			<label>&nbsp;</label> 
+			<input class="col-md-4" type="submit" value="Add" id="submit">
+		</form>
+	</div>
 </body>
 </html>
