@@ -8,7 +8,7 @@
 <title>Input Numbers</title>
 </head>
 <body>
-
+	<c:import url="/common-nav.jsp"></c:import>
 	<c:if test="${not empty error }">
 		<p>${error }</p>
 	</c:if>
@@ -22,8 +22,8 @@
 		<label>Number Two:</label>
 		<input type="number" step="any" name="number2" placeholder="Enter a Double" required><br/>
 		
-		<label>&nbsp;</label>
-		<input type="submit" value="Add" id="submit">
+		<label>	&nbsp;</label>
+		<input class="col-md-4" type="submit" value="Add" id="submit">
 	</form>
 </body>
 </html>

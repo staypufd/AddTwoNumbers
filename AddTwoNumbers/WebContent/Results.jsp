@@ -1,4 +1,5 @@
-
+<%@ taglib prefix="c" 
+           uri="http://java.sun.com/jsp/jstl/core" %>  
 <!DOCTYPE html >
 <html>
 <head>
@@ -7,10 +8,10 @@
 <title>Results</title>
 </head>
 <body>
+	<c:import url="/common-nav.jsp"></c:import>
 	Result is: ${result } <br/>
 	
 <%-- 	Context Path is: ${pageContext.request.contextPath} <br/> --%>
-	
-	<a href="${pageContext.request.contextPath}">Home</a>
+
 </body>
 </html>

@@ -8,7 +8,7 @@
 <title>Add Two Numbers Site</title>
 </head>
 <body>
-	<c:import url="/common-nav.html"></c:import>
+	<c:import url="/common-nav.jsp"></c:import>
 	<div class="col-md-8 jumbotron">
 		<p>This site is to show a simple example of a servlet that adds two
 		numbers.</p>
